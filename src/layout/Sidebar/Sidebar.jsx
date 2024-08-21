@@ -19,10 +19,10 @@ const Sidebar = () => {
     }
   }, [isSidebarOpen]);
    //============================= Mode =======================
- const { ToggleChangeMode , theme} = useContext(DarkModeContext);
+ const { ToggleChangeMode, theme} = useContext(DarkModeContext);
 
   return (
-    <div className={ `sidebar ${sidebarClass} ${theme === 'dark'? 'dark' : 'light'} ` }>
+    <div className={ `sidebar ${sidebarClass} ` }>
       <div className="user-info">
           <div className="info-img img-fit-cover">
               <img src={ personsImgs.person } alt="profile image" />
@@ -44,7 +44,10 @@ const Sidebar = () => {
             }
           </ul>
       </nav>
-      <div className='mode_dark' onClick={ToggleChangeMode}></div>
+     <div className='mode_div' onClick={ToggleChangeMode}>
+        <div className={`${theme === 'dark' ? 'mode_light' : 'mode_dark'}`}></div>
+        <p className='mode_paragraph'>{theme === 'dark' ? 'Light Mode' : 'Dark Mode'}</p>
+     </div>
     </div>
   )
 }

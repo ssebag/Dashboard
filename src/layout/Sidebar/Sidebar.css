@@ -1,6 +1,5 @@
 /* sidebar */
 .sidebar {
-  /**background-color: #000000ed;*/
   width: 260px;
   padding: 36px 20px;
   transition: var(--transition-default);
@@ -24,7 +23,7 @@
 }
 .info-name {
   font-size: 20px;
-  color: var(--clr-white);
+ /*  color: var(--clr-white); */
   text-transform: uppercase;
 }
 .navigation {
@@ -65,9 +64,12 @@
   letter-spacing: 0.03em;
   border: 1px solid transparent;
   transition: var(--transition-default);
+  font-weight: 600;
+  font-size: 16px;
 }
 .nav-link:hover {
   border: 1px solid var( --clr-purple);
+  font-weight: 700;
 }
 .nav-link.active {
   background-color:  var(--clr-purple);
@@ -80,13 +82,27 @@
 .nav-link-text {
   text-transform: capitalize;
 }
-.mode_dark{
-  height: 10px;
-  width: 10px;
-  background-color: black;
-  border: 1px solid white;
+.mode_div{
+  width: 100%;
+  display: flex;
+  gap: 10px;
 }
-
+.mode_dark{
+  height: 20px;
+  width: 20px;
+  background-color: var(--clr-black);
+  border-radius: 5px;
+}
+.mode_light{
+  height: 20px;
+  width: 20px;
+  background-color: var(--clr-white);
+  border-radius: 5px;
+}
+.mode_paragraph{
+  font-weight: 600;
+  font-size: 16px;
+}
 @media screen and (max-width: 1400px) {
   .sidebar {
     padding: 24px 16px;

@@ -37,7 +37,6 @@ ul {
 a {
   color: unset;
   text-decoration: none;
-  color: var(--clr-white);
 }
 button {
   background-color: transparent;
@@ -104,14 +103,24 @@ button {
 
 /* =================================== For dark ================================== */
 .dark{
-    background-color: var(--Black-color);
-    color: var(--White-color) !important ;
+    color: var(--clr-white) !important ;
     transition:all 0.3s;
 }
+.dark .sidebar{
+  background-color: #000000ed !important;
+}
+.dark .main-content{
+  background-color: #1e1c1cf5 !important;
+}
 .light{
-    background-color: var(--White-color);
-    color: var(--Black-color) !important;
+    color: var(--clr-black) !important;
     transition:all 0.3s;
+}
+.light .sidebar{
+  background-color: var(--clr-baby-purple) !important;
+}
+.light .main-content{
+  background-color: var(--clr-white) !important;
 }
 
 @media screen and (max-width: 1400px) {
