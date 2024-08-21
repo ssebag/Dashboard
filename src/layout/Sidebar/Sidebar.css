@@ -152,4 +152,7 @@
   .sidebar-change {
     margin-left: 0px;
   }
+  .mode_paragraph{
+   display: none;
+  }
 }
