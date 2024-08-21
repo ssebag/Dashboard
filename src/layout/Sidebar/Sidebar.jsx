@@ -22,7 +22,7 @@ const Sidebar = () => {
  const { ToggleChangeMode , theme} = useContext(DarkModeContext);
 
   return (
-    <div className={ `sidebar ${sidebarClass}` }>
+    <div className={ `sidebar ${sidebarClass} ${theme == 'dark'? 'dark' : ''} ` }>
       <div className="user-info">
           <div className="info-img img-fit-cover">
               <img src={ personsImgs.person } alt="profile image" />
