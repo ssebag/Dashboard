@@ -143,6 +143,10 @@
   .nav-link-text {
     display: none;
   }
+  .mode_paragraph{
+    display: none;
+   }
+ 
 }
 
 @media screen and (max-width: 420px) {
@@ -151,8 +155,5 @@
   }
   .sidebar-change {
     margin-left: 0px;
-  }
-  .mode_paragraph{
-   display: none;
   }
 }
