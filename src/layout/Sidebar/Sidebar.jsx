@@ -5,7 +5,7 @@ import { navigationLinks } from '../../data/data';
 import { useContext } from 'react';
 import { SidebarContext } from '../../context/sidebarContext';
 import { Link } from 'react-router-dom';
-import {DarkModeContext} from './../../context/DarkModeContext';
+import {DarkModeContext} from '../../context/DarkModeContext';
 const Sidebar = () => {
   const [activeLinkIdx] = useState(1);
   const [sidebarClass, setSidebarClass] = useState("");
