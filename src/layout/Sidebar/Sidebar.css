@@ -80,7 +80,11 @@
 .nav-link-text {
   text-transform: capitalize;
 }
-
+.mode_dark{
+  height: 10px;
+  width: 10px;
+  background-color: black:
+}
 
 @media screen and (max-width: 1400px) {
   .sidebar {
