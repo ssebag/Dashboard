@@ -18,6 +18,8 @@ const Sidebar = () => {
       setSidebarClass('');
     }
   }, [isSidebarOpen]);
+   //============================= Mode =======================
+ const { ToggleChangeMode , theme} = useContext(DarkModeContext);
 
   return (
     <div className={ `sidebar ${sidebarClass}` }>
@@ -42,6 +44,7 @@ const Sidebar = () => {
             }
           </ul>
       </nav>
+      <div className='mode_dark' onClick={ToggleChangeMode}></div>
     </div>
   )
 }
