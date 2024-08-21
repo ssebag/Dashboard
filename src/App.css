@@ -102,6 +102,18 @@ button {
   width: 24px;
 }
 
+/* =================================== For dark ================================== */
+.dark{
+    background-color: var(--Black-color);
+    color: var(--White-color) !important ;
+    transition:all 0.3s;
+}
+.light{
+    background-color: var(--White-color);
+    color: var(--Black-color) !important;
+    transition:all 0.3s;
+}
+
 @media screen and (max-width: 1400px) {
   .grid-common {
     padding: 16px;
